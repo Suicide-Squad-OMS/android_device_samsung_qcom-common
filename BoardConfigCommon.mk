@@ -23,13 +23,16 @@ TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH_VARIANT := armv7-a-neon
 
-# CMHW
-BOARD_HARDWARE_CLASS += hardware/samsung/cmhw
+
+# LineageHW
+BOARD_HARDWARE_CLASS += hardware/samsung/lineagehw
+
 
 # Graphics
 TARGET_USES_C2D_COMPOSITION := true
 TARGET_USES_ION := true
 TARGET_USES_GRALLOC1 := true
+
 # Qualcomm support
 BOARD_USES_QCOM_HARDWARE := true
 
@@ -37,3 +40,4 @@ BOARD_USES_QCOM_HARDWARE := true
 TARGET_RECOVERY_DEVICE_DIRS += device/samsung/qcom-common
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 BOARD_HAS_DOWNLOAD_MODE := true
+
